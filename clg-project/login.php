@@ -60,55 +60,25 @@ session_start();
 ?>
 
 
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Login</title>
-</head>
-<body>
+    <head>
+        <title>Login Page Design</title>
+        <link rel="stylesheet" type="text/css" href="login-style.css">
+        <body>
+            <div class="loginbox">
+                <img src="avatar.jpg" class="avatar">
+                <h1>GITS Login Here</h1>
+                <form action="" method="post">
+                    <P>Username</P>
+                    <input type="text" name="user_name" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Enter Password">
+                    <input type="submit" name="" value="Login">
+                    <a href="#">Lost your password</a><br>
+                    <a href="/CODING/Registration Page.html">Don't have an account? Click Here to Register</a>
+                </form>
+            </div>
 
-	<style type="text/css">
-	
-	#text{
-
-		height: 25px;
-		border-radius: 5px;
-		padding: 4px;
-		border: solid thin #aaa;
-		width: 100%;
-	}
-
-	#button{
-
-		padding: 10px;
-		width: 100px;
-		color: white;
-		background-color: lightblue;
-		border: none;
-	}
-
-	#box{
-
-		background-color: #0550c8;
-		margin: auto;
-		width: 300px;
-		padding: 20px;
-	}
-
-	</style>
-
-	<div id="box">
-		
-		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Login</div>
-
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
-
-			<input id="button" type="submit" value="Login"><br><br>
-
-			<a href="signup.php">Click to Signup</a><br><br>
-		</form>
-	</div>
-</body>
+        </body>
+    </head>
 </html>
